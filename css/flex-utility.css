@@ -1,0 +1,45 @@
+
+/* Flex Utilities */
+
+
+/* Flex Direction */
+.flex {
+    display: flex;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.flex.row { 
+    flex-flow: row 
+}
+
+
+/* Flex Justify-Content */
+
+.flex.justify-center { 
+    justify-content: center 
+}
+
+.flex.justify-between{
+    justify-content: space-between;
+}
+
+.flex.justify-start{
+    justify-content: flex-start;
+}
+
+.flex.align-center { 
+    align-items: center 
+}
+
+/* Flex Items */
+
+.self-center{
+    align-self: center;
+}
+
+.grow-1{
+    flex-grow: 1;
+}

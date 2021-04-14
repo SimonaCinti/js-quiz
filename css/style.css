@@ -1,0 +1,161 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color:black;
+  color: #dfe0e4;
+  font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: #fff;
+  animation: glowing 1s ease-in-out infinite alternate;
+  margin-bottom: 5rem;
+}
+
+@keyframes glowing {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #4f00b6, 0 0 40px #17057c, 0 0 50px #29c2ff, 0 0 60px #96fbff, 0 0 70px #1f0352;
+    }
+    to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #2b4ebe, 0 0 40px #4276e6, 0 0 50px #4644cf, 0 0 60px #3533d1, 0 0 70px #493cbb, 0 0 80px #8beeff;
+    }
+}
+
+h2 {
+  text-align:  center;
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+.btn {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    width: 10rem;
+    background-color: rgb(187, 185, 185);
+    text-align: center;
+    margin-top: 2rem;
+    border-radius: 5px;
+    border: 1px solid #493cbb;
+    text-decoration:  none;
+    color: #493cbb;
+    transition: all .4s ease;
+}
+
+.btn:hover {
+    color: rgb(187, 185, 185);
+    background-color:#493cbb;
+    border: 1px solid transparent;
+}
+
+
+/*
+* The Game
+*/
+
+.question-container,
+.result-container,
+.highscore-container {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.details-container {
+  margin: 1.5rem;
+}
+
+.choice-container {
+  margin: 1.5rem;
+  background-color: grey;
+  border: 1px solid rgb(77, 77, 79);
+  border-radius: 5px;
+  transition: transform 1s ease;
+}
+
+.choice-container:hover{
+  cursor: pointer;
+  -webkit-box-shadow: 1px 3px 15px 10px rgba(66,118,230,0.44); 
+  box-shadow: 1px 3px 15px 10px rgba(66,118,230,0.44);
+  transform: scale(1.1);
+}
+
+.choice-letter {
+  padding: 1.5rem 1.2rem;
+  background-color: #493cbb;
+}
+
+.choice-answer {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.correct {
+  background: rgb(13, 211, 13);
+}
+
+.incorrect {
+  background: rgb(144, 39, 39);
+}
+
+#progression-bar {
+  width: 20rem;
+  height: 2rem;
+  border: 0.1rem solid #493cbb;
+}
+
+#progression-bar #progress-bar-full {
+  height: 1.8rem;
+  background: #493cbb;
+  width: 0;
+}
+
+/*
+* Submit Form
+*/
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input{
+  margin-bottom: 1rem;
+  width: 20rem;
+  padding: 1.5rem;
+  border: none;
+  -webkit-box-shadow: 0px 0px 8px 9px rgba(73,60,187,0.53), 0px 0px 30px 10px rgba(187,182,181,0.82); 
+  box-shadow: 0px 0px 8px 9px rgba(73,60,187,0.53), 0px 0px 30px 10px rgba(187,182,181,0.82);
+}
+
+/*
+* Mediaquery
+*/
+
+@media only screen and (max-width: 510px) {
+    #progression-bar {
+    width: 8rem;
+    height: 1rem;
+    border: 0.1rem solid #493cbb;
+  }
+
+  #progression-bar #progress-bar-full {
+    height: 0.8rem;
+    background: #493cbb;
+    width: 0;
+  }
+
+}

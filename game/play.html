@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/flex-utility.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css'
+        integrity='sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=='
+        crossorigin='anonymous' />
+    <title>The Game</title>
+</head>
+
+<body>
+    <div id="app" class="app">
+        <div class="question-container flex column justify-center">
+            <h2 id="question"> What is the question? </h2>
+            <div class="choice-container flex">
+                <div class="choice-letter">A</div>
+                <div class="choice-answer" data-number="1">Lorem 1</div>
+            </div>
+            <div class="choice-container flex">
+                <div class="choice-letter">B</div>
+                <div class="choice-answer" data-number="2">Lorem 2</div>
+            </div>
+            <div class="choice-container flex">
+                <div class="choice-letter">C</div>
+                <div class="choice-answer" data-number="3">Lorem 3</div>
+            </div>
+            <div class="choice-container flex">
+                <div class="choice-letter">D</div>
+                <div class="choice-answer" data-number="4">Lorem 4</div>
+            </div>
+            <div class="details-container flex justify-between">
+                <div class="detail">
+                    <h3>Questions</h3>
+                    <p id="questionCounter"></p>
+                    <div id="progression-bar">
+                        <div id="progress-bar-full"></div>
+                    </div>
+                </div>
+                <div class="detail">
+                <h3>Score </h3>
+                <p id="score"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/game.js"></script>
+</body>
