@@ -14,7 +14,8 @@ let score = 0;
 let questionCounter = 0;
 let currentQuestion = {};
 let availableQuestion = [];
-
+let category = JSON.parse(localStorage.getItem('category'))
+console.log(category);
 // Rules
 const maxQuestion = 10;
 const correctPoint = 10;
@@ -24,8 +25,7 @@ const correctPoint = 10;
  */
 
 let questions = [];
-
-fetch("https://opentdb.com/api.php?amount=10&type=multiple")
+fetch(`https://opentdb.com/api.php?amount=10&type=multiple&category=${category}`)
     .then(res=>{
         return res.json();
     })

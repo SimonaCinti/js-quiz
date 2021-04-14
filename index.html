@@ -14,9 +14,19 @@
     <div id="app" class="app">
         <div class="container flex column justify-center align-center">
             <h1> Welcome to The Game</h1>
-            <a class="btn" href="./game/play.html">Play</a>
+            <h2>Select your category</h2>
+            <select name="category" id="category">
+                <option value="21">Sports</option>
+                <option value="20">Mithology</option>
+                <option value="12"> Music</option>
+            </select>
+            <a class="btn" href="./game/play.html" onclick="saveCategory(event)">Play</a>
             <a  class="btn" href="./game/highscores.html">High Score</a>
+            <p>Api provided by <a href="https://opentdb.com/">Open Trivia Database</a></p>
+            <p>All data provided by the API is available under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en"> the Creative Commons Attribution-ShareAlike 4.0 International License.</a></p>
         </div>
+        
     </div>
 </body>
+<script src="./js/category.js"></script>
 </html>
