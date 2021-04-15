@@ -28,7 +28,7 @@ const correctPoint = 10;
  */
 
 let questions = [];
-fetch(`https://opentdb.com/api.php?amount=10&type=multiple&category=${category}`)
+fetch(`https://opentdb.com/api.php?amount=10&difficulty=easy&type=multiple&category=${category}`)
     .then(res=>{
         return res.json();
     })
