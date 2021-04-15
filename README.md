@@ -1,3 +1,6 @@
-# js-quiz
+# Js-quiz
 
-Quiz App made with Javascript using Trivia Db Api
+Made with Javascript using [Open Trivia Db Api](https://opentdb.com/).
+
+
+### Play [here](https://simonacinti.github.io/js-quiz/)
