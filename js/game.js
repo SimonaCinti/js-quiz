@@ -8,6 +8,9 @@ const questionCounterText = document.getElementById("questionCounter");
 const scoreText = document.getElementById("score");
 const progressBar = document.getElementById("progression-bar");
 const progressBarFull = document.getElementById("progress-bar-full");
+const loader = document.getElementById("loader");
+const containerGame = document.getElementById("container-game");
+
 
 let acceptingQuestion = false;
 let score = 0;
@@ -45,6 +48,9 @@ fetch(`https://opentdb.com/api.php?amount=10&type=multiple&category=${category}`
             })
             return formattedQuestion
         });
+        // Start game
+        containerGame.classList.remove("hidden");
+        loader.classList.add("hidden");
         startGame();
 
     })
